@@ -4,14 +4,6 @@ import federation from "@originjs/vite-plugin-federation";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  server: {
-    port: 5000,
-    cors: {
-      origin: "*",
-      methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
-      allowedHeaders: ["X-Requested-With", "content-type", "Authorization"],
-    },
-  },
   build: {
     modulePreload: false,
     target: "esnext",
@@ -29,7 +21,7 @@ export default defineConfig({
       },
       remotes: {
         '@cactos_host': 'http://localhost:5173/remoteEntry.js',
-        '@cactos_tools': 'http://localhost:5000/remoteEntry.js',
+        '@cactos_tools': 'http://localhost:5001/remoteEntry.js',
       },
       shared: ['react', 'react-dom'],
     })
