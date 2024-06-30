@@ -16,8 +16,8 @@ export default defineConfig({
       name: '@cactos_tools',
       filename: 'remoteEntry.js',
       exposes: {
-        './noise.webp': './src/assets/noise.webp',
-        "./MfeErrorLoading": "./src/components/MfeErrorLoading",
+        './Messages': './src/constants/Messages',
+        './SystemConfiguration': './src/constants/Configure.ts',
       },
       remotes: {
         '@cactos_host': 'http://localhost:5173/remoteEntry.js',
