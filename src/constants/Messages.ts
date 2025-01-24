@@ -26,6 +26,7 @@ const MESSAGES = {
   forbidden: "Acesso negado! O usuário não tem permissão.",
   error: "Erro inesperado. Tente novamente ou contate o suporte. Erro:",
   error_crud: " Não foi possível realizar a operação, ",
+  error_microfrontend: "Não foi possível carregar o microfrontend. Erro: ",
   required_field: "Campo obrigatório",
 };
 
