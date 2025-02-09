@@ -18,6 +18,7 @@ export default defineConfig({
       exposes: {
         "./Messages": "./src/constants/Messages",
         "./Theme": "./src/constants/Theme.ts",
+        "./Models": "./src/constants/Models.ts",
         "./Permissions": "./src/constants/Permissions.ts",
         "./AsteraiIAModels": "./src/constants/AsteraiIAModels.ts",
         "./AxiosInstance": "./src/helpers/axiosInstance.ts",

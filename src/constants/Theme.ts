@@ -257,29 +257,13 @@ const Theme: APIOptions = {
     },
     dropdown: {
       ...Tailwind.dropdown,
-      root: () => ({
+      item: {
         className: classNames(
-          "w-full py-1 px-2 h-md text-xs text-gray-700 dark:text-white",
-          "bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg",
-          "shadow-lg"
+          "text-gray-700 dark:text-white/80",
+          "px-4 py-2",
+          "dark:border-gray-800"
         ),
-      }),
-      input: () => ({
-        className: classNames(
-          "w-full py-1 px-2 h-md text-xs text-gray-700 dark:text-white",
-          "bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg",
-          "shadow-lg"
-        ),
-      }),
-      container: () => ({
-        className: classNames(
-          "bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg",
-          "shadow-lg"
-        ),
-      }),
-      content: () => ({
-        className: classNames("py-1"),
-      }),
+      }
     },
     fieldset: {
       ...Tailwind.fieldset,
