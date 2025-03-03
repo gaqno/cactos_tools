@@ -1,0 +1,1 @@
+{"root":["./src/index.ts","./src/main.tsx","./src/vite-env.d.ts","./src/constants/AsteraiIAModels.ts","./src/constants/Messages.ts","./src/constants/ModelsLLM.ts","./src/constants/Permissions.ts","./src/constants/Theme.ts","./src/helpers/axiosInstance.ts"],"errors":true,"version":"5.7.3"}
