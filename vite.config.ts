@@ -1,6 +1,7 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import federation from "@originjs/vite-plugin-federation";
+import tailwindcss from '@tailwindcss/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -12,14 +13,15 @@ export default defineConfig({
   },
   plugins: [
     react(),
+    tailwindcss(),
     federation({
       name: "@cactos_tools",
       filename: "remoteEntry.js",
       exposes: {
         "./Messages": "./src/constants/Messages",
         "./Theme": "./src/constants/Theme.ts",
-        "./Models": "./src/constants/Models.ts",
         "./Permissions": "./src/constants/Permissions.ts",
+        "./ModelsLLM": "./src/constants/ModelsLLM.ts",
         "./AsteraiIAModels": "./src/constants/AsteraiIAModels.ts",
         "./AxiosInstance": "./src/helpers/axiosInstance.ts",
       },
